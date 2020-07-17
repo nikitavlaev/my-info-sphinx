@@ -6,7 +6,7 @@ install:
 script:
   # Use Sphinx to make the html docs
   - make singlehtml
-  - touch _build/singlehtml/.nojekyll
+  - touch build/singlehtml/.nojekyll
 
 # Tell Travis CI to copy the documentation to the gh-pages branch of
 # your GitHub repository.
