@@ -1,0 +1,16 @@
+language: python
+
+script:
+  # Use Sphinx to make the html docs
+  - make singlehtml
+
+# Tell Travis CI to copy the documentation to the gh-pages branch of
+# your GitHub repository.
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN  # Set in travis-ci.org dashboard, marked secure
+  keep-history: true
+  on:
+    branch: master
+  local_dir: _build/singlehtml/
