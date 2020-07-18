@@ -9,6 +9,7 @@ Welcome to my info page!
    contacts
    socials
    education
+   skills
    projects
 
 .. |Avatar| image:: _static/NikitaVlaev.jpg
